@@ -1,0 +1,122 @@
+/* Custom Corporate Design System */
+:root {
+    --primary-blue: #1e3a8a;
+    /* Deep professional executive blue */
+    --hover-blue: #1d4ed8;
+    /* Vibrant blue for active items */
+    --light-bg: #f8fafc;
+    /* Anti-glare soft background gray */
+    --card-bg: #ffffff;
+    /* Pure white elements */
+    --text-main: #0f172a;
+    /* Dark charcoal for crisp reading */
+    --text-muted: #64748b;
+    /* Modern slate gray for labels */
+    --border-color: #e2e8f0;
+    /* Soft outline borders */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Central Login Workspace Wrapper */
+.login-container {
+    background-color: var(--card-bg);
+    width: 100%;
+    max-width: 420px;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-header h2 {
+    color: var(--primary-blue);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.login-header p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Styled Form Components */
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: var(--text-main);
+    background-color: #fff;
+    border: 1.5px solid var(--border-color);
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
+}
+
+/* Interactive Action Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--hover-blue);
+}
+
+/* Footer Accent Context */
+.login-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
